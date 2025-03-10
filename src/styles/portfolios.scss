@@ -1,0 +1,182 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+
+
+.portfolios{
+    margin-top:170px;
+    margin-bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width:360px){
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .portfolios_line{
+        padding-bottom: 15px;
+        width: 1160px;
+        @media (max-width:360px){
+            width: 360px;
+        }
+    }
+    .portfolios_title{
+        @include title_1();
+        align-self: flex-start;
+        padding-left: 140px;
+        @media (max-width:360px){
+            font-size:36px;
+            line-height: 44px;
+            padding: 0 0 60px 20px;
+        }
+    }
+    .portfolios_icons{
+        display: grid;
+        grid-template-columns: 172px 172px 211px 173px;
+        grid-template-rows: 36px 36px;
+        row-gap: 95px;
+        column-gap: 130px;
+        padding-top: 80px;
+        color: rgba(184, 184, 184, 1);
+        font-family: SUSE;
+        font-size: 26px;
+        font-weight: 100;
+        line-height: 36px;
+        @media (max-width:360px){
+            grid-template-columns: 121px 121px;
+            grid-template-rows:25px 25px 25px 25px;
+            row-gap: 40px;
+            column-gap: 30px;
+            padding-top: 0px;
+            line-height: 26px;
+            font-size: 23px;
+            position:relative;
+            left: -25px;
+        }
+        .atomn{
+            width: 166px;
+            height: 36px;
+            display:flex;
+            justify-content: center;
+            .atomn_img{
+                padding-right: 10px;
+                @media (max-width:360px){
+                    width: 22px;
+                    height: 22px;
+                    padding-right: 15px;
+                }
+            }
+        }
+        .oracle{
+            width: 174px;
+            height: 36px;
+            display:flex;
+            justify-content: center;
+            .oracle_img{
+                padding-right: 10px;
+                @media (max-width:360px){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .jarvice{
+            width: 167px;
+            height: 37px;
+            display:flex;
+            justify-content: center;
+            .jarvice_img{
+                padding-right: 9px;
+                @media (max-width:360px){
+                    width: 25px;
+                    height: 25px;
+                    padding-right: 11px;
+                }
+            }
+        }
+        .raxon{
+            width: 158px;
+            height: 36px;
+            display:flex;
+            justify-content: center;
+            .raxon_img{
+                padding-right: 10px;
+                @media (max-width:360px){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .tindo{
+            width: 148px;
+            height: 36px;
+            display:flex;
+            justify-content: center;
+            .tindo_img{
+                padding-right: 10px;
+                @media (max-width:360px){
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+        .kawaskii{
+            width: 176px;
+            height: 36px;
+            display:flex;
+            justify-content: center;
+            .kawaskii_img{
+                padding-right: 7px;
+                @media (max-width:360px){
+                    width: 25px;
+                    height: 25px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .cypher{
+            width: 211px;
+            height: 116px;
+            background-image: linear-gradient(to right, rgba(153,169,255,1), rgba(92,228,207,1));
+            @include gradient;
+            align-self: center;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -25px;
+            @media (max-width:360px){
+                background-color:  rgba(48, 54, 58, 0);
+            }
+            .cypher_img{
+                width: 36px;
+                height: 36px;
+                padding-right: 5px;
+                @media (max-width:360px){
+                    width: 24px;
+                    height: 24px;
+                }
+                .cypher_background{
+                    width: 211px;
+                    height: 116px;
+                    background-color: rgba(46, 93, 124) ;
+                   
+                }
+            }   
+        }
+        .ordix{
+            width: 140px;
+            height: 37px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            .ordix_img{
+                padding-right: 10px;
+                @media (max-width:360px){
+                    width: 20px;
+                    height: 20px;
+                    padding-left: 9px;
+                }
+            }
+        }
+    }
+}

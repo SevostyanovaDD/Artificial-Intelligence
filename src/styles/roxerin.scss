@@ -1,0 +1,67 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+
+.roxerin{
+    margin-left: 140px;
+    padding-top: 50px;
+    display:flex;
+    @media (max-width:360px){
+        flex-direction: column-reverse;
+        margin:0;
+        margin-left: 20px;
+        padding-top: 80px;
+     }
+    .roxerin_textblock{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 522px;
+        height: 253px;
+        padding-top: 115px;
+        padding-right: 45px;
+        @media (max-width:360px){
+            width: 322px;
+            height: 260px;
+            padding-top: 0px;
+          }
+        .roxerin_word{
+            @include word();
+            @media (max-width:360px){
+                @include wordAdapt();
+             }
+        }
+        .roxerin_title{
+            @include title();
+            @media (max-width:360px){
+                @include titleAdapt();
+            }
+        }
+        .roxerin_subtitle{
+            @include subtitle();
+            @media (max-width:360px){
+                @include subTitleAdapt();
+            }
+        }
+        .roxerin_icon{
+            padding-top: 25px;
+            @media (max-width:360px){
+                padding-top: 40px;
+            }
+        }
+    }
+    .roxerin_img{
+        width: 565px;
+        height: 480px;
+        @media (max-width:360px){
+            display:none;
+        }
+    }
+    .roxerin_img_2{
+        display:none;
+        @media (max-width:360px){
+            display:block;
+            width: 320px;
+            height: 250px;
+        }
+    }
+}

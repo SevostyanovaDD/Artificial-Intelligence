@@ -1,0 +1,181 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+
+.IRS{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width:1100px;
+    @media (max-width:360px){
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .IRS_title{
+        .IRS_title_line{
+            margin-left: 150px;
+            width: 1160px;
+            height: 1px;
+            @media (max-width:360px){
+                width: 360px;
+                margin-left: 0px;
+            }
+        }
+        .IRS_title_text{
+            @include title_2();
+            padding: 30px 0px 90px 140px;
+            @media (max-width:360px){
+                width: 310px;
+                height: 88px;
+                font-size: 36px;
+                line-height: 44px;
+                padding: 30px 0px 60px 19px;
+            }
+        }
+    }
+    .IRS_img{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 134px;
+        @media (max-width:360px){
+            flex-direction: column;
+            margin-left:20px;
+            margin-bottom: 40px;
+        }
+        .IRS_img_1{
+            .IRS_img_1_pic{
+                padding-bottom: 30px;
+                @media (max-width:360px){
+                    width: 320px;
+                    padding-bottom: 30px;
+                }
+            }
+            .IRS_img_1_text{
+                width: 420px;
+                height: 150px;
+                @include title();
+                @media (max-width:360px){
+                    font-size: 28px;
+                    width: 340px;
+                    line-height: 30px;
+                }
+                #IRS_img_1_text_id{
+                    @include ph_subtitle();
+                    text-align: left;
+                    margin:0;
+                    padding-right: 3px;
+                    display:none;
+                    @media (max-width:360px){
+                        display:block;
+                        padding-bottom: 15px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .IRS_img_2{
+            padding-right: 55px;
+            .IRS_img_2_pic{
+                padding-bottom: 40px;
+                @media (max-width:360px){
+                    width: 320px;
+                    padding-bottom: 30px;
+                }
+            }
+            .IRS_img_2_text{
+                width: 466px;
+                height: 150px;
+                @include title();
+                @include gradient();
+                background-image: linear-gradient(92.73deg,  rgba(153,169,255,1) 0%, rgba(92,228,207,1)  100%);
+                @media (max-width:360px){
+                    font-size: 28px;
+                    width: 340px;
+                    line-height: 30px;
+                    display:flex;
+                    flex-direction: column;
+                }
+                #IRS_img_2_text_id{
+                    @include ph_subtitle();
+                    text-align: left;
+                    margin:0;
+                    padding-right: 3px;
+                    @media (max-width:360px){
+                        padding-bottom: 15px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .IRS_img_3{
+            .IRS_img_3_pic{
+                padding-bottom: 40px;
+                @media (max-width:360px){
+                    width: 320px;
+                    padding-bottom: 30px;
+                }
+            }
+            .IRS_img_3_text{
+                width: 466px;
+                height: 150px;
+                @include title();
+                @media (max-width:360px){
+                    font-size: 28px;
+                    width: 340px;
+                    line-height: 30px;
+                    display:flex;
+                    flex-direction: column;
+                }
+                #IRS_img_3_text_id{
+                    @include ph_subtitle();
+                    text-align: left;
+                    margin:0;
+                    padding-right: 3px;
+                    @media (max-width:360px){
+                        padding-bottom: 15px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .IRS_buttons{
+        display: flex;
+        @media (max-width:360px){
+            flex-direction: column-reverse;
+        }
+        .IRS_buttons_insights{
+            display: flex;
+            margin-right: 796px;
+            margin-left: 120px;
+            height: 16px;
+            @media (max-width:360px){
+                margin-left: 20px;
+            }
+            .IRS_buttons_insights_viewall{
+                @include viewall();
+                width: 165px;
+            }
+        }
+        .IRS_buttons_arrows{
+            display: flex;
+            flex-direction: row;
+            width: 180px;
+            @media (max-width:360px){
+                width: 110px;
+                padding: 0 0 80px 230px;
+            }
+            .arrow_1{
+                padding-right: 30px;
+                width: 50px;
+                @media (max-width:360px){
+                    width: 30px;
+                }
+            }
+            .arrow_2{
+                width: 100px;
+                @media (max-width:360px){
+                    width: 60px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+.footer{
+    .footer_line{
+        width: 1440px;
+        margin-bottom: 60px;
+        @media (max-width:360px) {
+            width: 360px;
+            margin-bottom: 30px;
+        }
+    }
+    .footer_text{
+        margin-bottom: 42px;
+        display: flex;
+        justify-content:center;
+        gap: 7px;
+        @media (max-width:360px) {
+            margin-left: 10px;
+            margin-bottom: 36px;
+        }
+        .footer_text_allrights{
+            @include word();
+            text-transform: uppercase;
+            @media (max-width:360px) {
+                font-size: 12px;
+            }
+        }
+        #pixirhy{
+            @include word();
+            color: rgba(153, 169, 255, 1);
+            @media (max-width:360px) {
+               text-decoration: underline;
+               font-size: 12px;
+            }
+        }
+    }
+}

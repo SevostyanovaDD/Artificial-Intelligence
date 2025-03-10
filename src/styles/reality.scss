@@ -1,0 +1,168 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+
+
+.reality{
+    display: flex;
+    gap: 129px;
+    margin-bottom: 90px;
+    @media (max-width:360px){
+        flex-direction: column;
+        gap: 60px;
+    }
+   .reality_left{
+        margin-left: 140px;
+        @media (max-width:360px){
+            margin-left: 20px;
+        }
+        .reality_left_text{
+            width: 565px;
+            @media (max-width:360px){
+                width: 328px;
+            }
+            .reality_left_text_heading{
+                @include title_2();
+                @include gradient();
+                background-image: linear-gradient(92.73deg,  rgba(153,169,255,1) 0%, rgba(92,228,207,1)  100%);
+                height: 148px;
+                padding-bottom: 30px;
+                @media (max-width:360px){
+                    height: 88px;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+            .reality_left_text_subheading{
+                @include subtitle();
+                height: 236px;
+                padding-bottom: 188px;
+                @media (max-width:360px){
+                    height: 96px;
+                    font-size: 17.8px;
+                    line-height: 24px;
+                    padding-bottom: 10px;
+                }
+            }
+            .reality_left_text_platforms{
+                display: flex;
+                gap: 30px;
+                @include word();
+                @media (max-width:360px){
+                    display: none;
+                }
+                .reality_left_text_platforms_linkedin{
+                    color: rgba(153, 169, 255, 1);
+                }
+            }
+        }
+    }
+    .reality_right{
+        padding-top: 36px;
+        @media (max-width:360px){
+            padding-top: 0px;
+        }
+        .reality_right_survey{
+            @include categories();
+            width: 466px;
+            height: 222px;
+            @media (max-width:360px){
+                width: 320px;
+                height: 197px;
+                margin-left: 20px;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+           .reality_right_survey_text{
+                padding-left: 25px;
+                padding-bottom: 19px;
+                position: relative;
+                display: inline-block;
+           }
+           .reality_right_survey_text::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                margin-left: 20px;
+                bottom: -2px; 
+                width: 80px;
+                height: 3px; 
+                background: linear-gradient(90deg, #99A9FF 0%, #5CE4CF 100%);
+           }
+           .survey_line{
+            padding-bottom: 41px;
+            width: 466px;
+            @media (max-width:360px){
+                width: 320px;
+            }
+           }
+        }
+        .reality_right_getintouch{
+            margin-top: 100px;
+            display:flex;
+            gap: 20px;
+            @media (max-width:360px){
+                margin-top: 130px;
+            }
+            .reality_right_getintouch_text{
+                font-family: SUSE;
+                line-height: 16px;
+                font-size: 16px;
+                font-weight: 300;
+                color: rgba(153, 169, 255, 1);
+                padding-left: 20px;
+                margin-bottom: 224.5px;
+                @media (max-width:360px){
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .reality_left_text_platforms_media{
+            display: none;
+            .reality_left_text_platforms_linkedin{
+                color: rgba(153, 169, 255, 1);
+            }
+            @media (max-width:360px){
+                display: flex;
+                gap: 20px;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                justify-content: center;
+                @include word();
+                font-size: 10px;
+                flex-direction: row;
+            }
+        }
+        .reality_right_policy{
+            display: flex;
+            gap: 30px;
+            @include word();
+            text-transform: uppercase;
+            @media (max-width:360px){
+                gap:10px;
+                margin-left:20px;
+            }
+            .reality_right_policy_privacy{
+                width: 220px;
+                height: 18px;
+                @media (max-width:360px){
+                    flex-direction: row;
+                    width: 230px;
+                    font-size: 10px;
+                }
+            }
+            .reality_right_policy_cookies{
+                width: 200px;
+                height: 18px;
+                @media (max-width:360px){
+                    flex-direction: row;
+                    width: 235px;
+                    font-size: 10px;
+                }
+            }
+        }
+    } 
+}
+
+
+
+

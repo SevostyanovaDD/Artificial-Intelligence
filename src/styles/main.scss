@@ -1,0 +1,21 @@
+@use "./header" as *;
+@use "./ai_startup" as *;
+@use "./building_faster" as *;
+@use "./we_invest" as *;
+@use "./roxerin" as *;
+@use "./portfolios.scss" as *;
+@use "./genius.scss" as *;
+@use "./port_jobs.scss" as *;
+@use "./IRS.scss" as *;
+@use "./reality.scss" as *;
+@use "./footer.scss" as *;
+
+
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: #1D1D1D;
+  
+}

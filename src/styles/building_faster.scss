@@ -1,0 +1,50 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+
+.building_faster{
+    margin-top: 30px;
+    .building_faster_img{
+        width: 893px;
+        height: 488px;
+        padding-left: 308px;
+        @media (max-width:360px){
+            width: 320px;
+            height: 160px; 
+            padding-left: 25px;
+        }
+    }
+    .building_faster_text{
+        width: 522px;
+        height: 380px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 140px;
+        position:relative;
+        bottom:170px;
+        @media (max-width:360px){
+            width: 320px;
+            height: 308px; 
+            padding-left: 30px;
+            margin-top: 200px;
+        }
+        .building__faster_title{
+            font-family: SUSE;
+            font-size: 62px;
+            font-weight: 200;    
+            line-height: 74px;
+            color:rgba(244, 244, 244, 1);
+            @media (max-width:360px){
+                @include maxwidth();
+            }
+        }
+        .building__faster_subtitle{
+            @include subtitle();
+            @media (max-width:360px){
+                font-size: 18px;
+                line-height: 24px;
+                padding: 30px 0 30px;
+            }
+        }
+    }
+}

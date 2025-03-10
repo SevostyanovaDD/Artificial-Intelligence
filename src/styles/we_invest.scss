@@ -1,0 +1,105 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+
+.we_invest{
+    margin-left:140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media (max-width:360px){
+       margin: -50px 0 0 25px;
+    }
+    .we_invest_textblock{
+        width:1160px;
+        height:154px;
+        padding-bottom: 90px;
+        display:flex;
+        align-items: center;
+        @media (max-width:360px){
+            width: 322px;
+            height: 344px; 
+            flex-direction: column;
+        }
+        .we_invest_title{
+            width: 664px;
+            height: 154px;
+            @include title_1();
+            @media (max-width:360px){
+                @include maxwidth();
+                width: 322px;
+            }
+        }
+        .we_invest_subtitle{
+            width: 442px;
+            height: 112px;
+            @include subtitle();
+            @media (max-width:360px){
+                font-size: 18px;
+                line-height: 24px;
+                width: 322px;
+                padding-top: 50px;
+            }
+        }
+    }
+    .we_invest_corporobo{
+        display:flex;
+        @media (max-width:360px){
+            flex-direction: column;
+        }
+        .we_invest_corporobo_img{
+            width: 566px;
+            height: 480px;
+            @media (max-width:360px){
+                display:none;
+            }
+        }
+        .we_invest_corporobo_img_2{
+            display:none;
+            @media (max-width:360px){
+                display:block;
+                width: 320px;
+                height: 250px;
+                padding: 60px 0 15px ;
+            }
+        }
+        .we_invest_corporobo_text{
+            width: 511px;
+            height: 253.31px;
+            padding-left: 65px;
+            display:flex;
+            flex-direction: column;
+            justify-content:space-between;
+            padding-top: 100px;
+            @media (max-width:360px){
+                width: 328px;
+                height: 260px; 
+                padding: 0;
+            }
+            .kawaski{
+                @include word();
+                @media (max-width:360px){
+                   @include wordAdapt();
+                }
+            }
+            .corporobo_title{
+               @include title();
+               @media (max-width:360px){
+                    @include titleAdapt();
+                }
+            }
+            .corporobo_subtitle{
+                @include subtitle();
+                @media (max-width:360px){
+                    @include subTitleAdapt();
+                }
+            }
+            .corporobo_icon{
+                padding-top: 25px;
+                @media (max-width:360px){
+                    padding-top: 40px;
+                 }
+            }
+        }
+    }
+}
+
+

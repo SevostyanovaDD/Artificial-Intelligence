@@ -1,0 +1,204 @@
+@use  "_mixins" as *;
+@use "_fonts" as *;
+.genius{
+    display:flex;
+    @media (max-width:360px){
+        width: 360px;
+        height:1190px;
+        background-color:rgba(35, 37, 38, 1);
+        flex-direction: column;
+    }
+    .genius_photos{
+        display:flex;
+        margin-bottom: 150px;
+        margin-left:140px;
+        @media (max-width:360px){
+            margin: 60px 20px 0px 20px;
+        }
+        .genius_photos_1{
+            margin-top: 85px;
+            @media (max-width:360px){
+                margin-top: 0px;
+            }
+            .edris{
+                .edris_img{
+                    width: 268px;
+                    height: 340px;
+                    @media (max-width:360px){
+                        width: 150px;
+                        height: 190px;
+                    }
+                }
+                .edris_title{
+                    @include ph_title();
+                    @media (max-width:360px){
+                        font-size: 20px;
+                    }
+                }
+                .edris_subtitle{
+                    @include ph_subtitle();
+                    @media (max-width:360px){
+                        font-size: 14px;
+                        line-height: 10px;  
+                    }
+                }
+            }
+            .chris{
+                .chris_img{
+                    width: 268px;
+                    height: 340px;
+                    @media (max-width:360px){
+                        width: 150px;
+                        height: 190px;
+                    }
+                }
+                .chris_title{
+                    @include ph_title();
+                    @media (max-width:360px){
+                        font-size: 20px;
+                    }
+                }
+                .chris_subtitle{
+                    @include ph_subtitle();
+                    @media (max-width:360px){
+                        font-size: 14px;
+                        line-height: 10px;  
+                    }
+                }
+            }
+        }
+        .genius_photos_2{
+            margin-right: 65px;
+            @media (max-width:360px){
+                width: 150px;
+                height: 190px;
+                margin-top: 30px;
+            }
+            .mark{
+                margin-left: 30px;
+                .mark_img{
+                    width: 268px;
+                    height: 340px;
+                    @media (max-width:360px){
+                        width: 150px;
+                        height: 190px;
+                    }
+                }
+                .mark_title{
+                    @include ph_title();
+                    @media (max-width:360px){
+                        font-size: 20px;
+                    }
+                }
+                .mark_subtitle{
+                    @include ph_subtitle();
+                    @media (max-width:360px){
+                        font-size: 14px;
+                        line-height: 10px;  
+                    }
+                }
+            }
+            .roberto{
+                margin-left: 30px;
+                .roberto_img{
+                    width: 268px;
+                    height: 340px;
+                    @media (max-width:360px){
+                        width: 150px;
+                        height: 190px;
+                    }
+                }
+                .roberto_title{
+                    @include ph_title();
+                    @media (max-width:360px){
+                        font-size: 17.2px;
+                    }
+                }
+                .roberto_subtitle{
+                    @include ph_subtitle();
+                    @media (max-width:360px){
+                        font-size: 14px;
+                        line-height: 10px; 
+                    }
+                }
+            }
+        }
+    }
+    .genius_line{
+        display:flex;
+        height: 992px;
+        @media (max-width:360px){
+            display:none;
+        }
+    }
+    .genius_textblock{
+        display:flex;
+        margin-left: 64px;
+        @media (max-width:360px){
+            margin-left: 10px;
+        }
+        .genius_textblock_container_main{
+            display:flex;
+            flex-direction: column;
+            .genius_textblock_container_1{
+                .genius_textblock_vector{
+                    .genius_textblock_vector_img{
+                        width: 606px;
+                        height: 166px;
+                        position: relative;
+                        z-index: 1;
+                        top: 85px;
+                        @media (max-width:360px){
+                            display:none;
+                        }
+                    }
+                }
+            }
+            .genius_textblock_container_2{
+                width: 606px;
+                height: 713px;
+                background-color:rgba(35, 37, 38, 1);
+                @media (max-width:360px){
+                    background-color: rgba(255,255,255,0);
+                    width: 300px;
+                }
+                .genius_textblock_title{
+                    @include title_2();
+                    padding-bottom: 40px;
+                    margin-top: 173px;
+                    margin-left: 69px;
+                    @media (max-width:360px){
+                        font-size: 36px;
+                        line-height: 44px;
+                        margin-left: 33px;
+                        margin-top: 60px;
+                    }
+                }
+                .genius_textblock_subtitle{
+                    @include subtitle();
+                    width: 360px;
+                    height: 72px;
+                    padding-bottom: 30px;
+                    margin-left: 69px;
+                    @media (max-width:360px){
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: 294px;
+                        margin-left: 33px;
+                    }
+                }
+                .genius_textblock_button{
+                    margin-left: 69px;
+                    @media (max-width:360px){
+                        padding-top: 50px;
+                        margin-left: 33px;
+                    }
+                    .genius_textblock_button_img{
+                        width: 127px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

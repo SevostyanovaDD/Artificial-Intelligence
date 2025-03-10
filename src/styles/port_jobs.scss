@@ -1,0 +1,250 @@
+@use  "_mixins"  as *;
+@use  "_fonts"  as *;
+
+
+.port_jobs{
+    .port_jobs_main{
+        .port_jobs_main_line{
+            text-align: center;
+            @media (max-width:360px) {
+                display:none;
+            }
+        }
+        .port_jobs_main_title{
+            @include title_2();
+            margin-top: 30px;
+            margin-left: 140px;
+            margin-bottom: 140px;
+            @media (max-width:360px) {
+                margin-top: 100px;
+                margin-left: 19px;
+                margin-bottom: 60px;
+                @include title_2_media();
+                width: 280px;
+            }
+        }
+    }
+    .port_jobs_text{
+        display: flex;
+        flex-direction:row;
+        margin-left: 140px;
+        @media (max-width:360px) {
+            flex-direction:column-reverse;
+            margin-left: 20px;
+        }
+        .port_jobs_text_left{
+            width: 763px;
+            height: 636px;
+            @media (max-width:360px) {
+                width: 360px;
+                height: 532px;
+                margin-top: 60px;
+            }
+            .port_jobs_text_left_kawaski_container{
+                width: 360px;
+                height: 238px;
+                display:flex;
+                @media (max-width:360px) {
+                    width: 320px;
+                    height: 124px;
+                }
+                .port_jobs_text_left_kawaski{
+                    .port_jobs_text_left_kawaski_uptitle{
+                        @include word();
+                        padding-bottom: 10px;
+                        @media (max-width:360px) {
+                            @include word_media();
+                        }
+                    }
+                    .kawaski_arrow_container{
+                        display:flex;
+                        .port_jobs_text_left_kawaski_title{
+                            @include title();
+                            padding-bottom: 20px;
+                            @media (max-width:360px) {
+                                @include title_media();
+                            }
+                        }
+                        .port_jobs_text_left_kawaski_arrow{
+                            .port_jobs_text_left_kawaski_arrow_img{
+                                padding-top: 70px;
+                                margin-left: 200px;
+                                @media (max-width:360px) {
+                                    width: 36px;
+                                    padding-top: 40px;
+                                    margin-left: 30px;
+                                } 
+                            }
+                        }
+                    }
+                    .port_jobs_text_left_kawaski_subtitle{
+                        @include ph_subtitle();
+                        text-align:left;
+                        margin-bottom: 40px;
+                        @media (max-width:360px) {
+                            @include ph_subtitle_media();
+                        }
+                    }
+                    .port_jobs_text_left_kawaski_line{
+                        .port_jobs_text_left_kawaski_line_img{
+                            margin-left: -35px;
+                           @media (max-width:360px) {
+                                width: 360px;
+                                margin-left: -20px;
+                            }    
+                        }
+                    }
+                }
+            }
+            .port_jobs_text_left_cypher_container{
+                width: 763px;
+                height: 238px;
+                display:flex;
+                @media (max-width:360px) {
+                    width: 320px;
+                    height: 124px;
+                }
+                .port_jobs_text_left_cypher{
+                    .port_jobs_text_left_cypher_uptitle{
+                        @include word();
+                        padding-bottom: 10px;
+                        @media (max-width:360px) {
+                            @include word_media();
+                            padding-top: 70px;
+                        }
+                    }
+                    .cypher_arrow_container{
+                        display:flex;
+                        .port_jobs_text_left_cypher_title{
+                            @include title();
+                            padding-bottom: 20px;
+                            @media (max-width:360px) {
+                                @include title_media();
+                            }
+                        }
+                        #head_of_growth{
+                            @include gradient();
+                            background-image: linear-gradient(92.73deg,  rgba(153,169,255,1) 0%, rgba(92,228,207,1)  100%);
+                        }
+                        .port_jobs_text_left_cypher_arrow{
+                            .port_jobs_text_left_cypher_arrow_img{
+                                padding-top: 70px;
+                                margin-left: 200px;
+                                @media (max-width:360px) {
+                                    width: 36px;
+                                    padding-top: 40px;
+                                    margin-left: 30px;
+                                } 
+                            }
+                        }
+                    }
+                    .port_jobs_text_left_cypher_subtitle{
+                        @include ph_subtitle();
+                        margin-bottom: 40px;
+                        text-align:left;
+                        @media (max-width:360px) {
+                            @include ph_subtitle_media();
+                        }
+                    }
+                    .port_jobs_text_left_cypher_line{
+                        .port_jobs_text_left_cypher_line_img{
+                            margin-left: -35px;
+                            @media (max-width:360px) {
+                                margin-left: -20px;
+                                width: 360px;
+                            }  
+                        }
+                    }
+                }
+            }
+            .port_jobs_text_left_ordix_container{
+                width: 689px;
+                height: 159px;
+                display:flex;
+                gap: 230px;
+                @media (max-width:360px) {
+                    width: 520px;
+                    height: 124px;
+                }
+                .port_jobs_text_left_ordix{
+                    .port_jobs_text_left_ordix_uptitle{
+                        @include word();
+                        padding-bottom: 10px;
+                        @media (max-width:360px) {
+                            @include word_media();
+                            padding-top: 150px;
+                        }
+                    }
+                    .ordix_arrow_container{
+                        display: flex;
+                        .port_jobs_text_left_ordix_title{
+                            @include title();
+                            font-size: 44px;
+                            padding-bottom: 20px;
+                            @media (max-width:360px) {
+                                @include title_media();
+                            }
+                        }
+                        .port_jobs_text_left_ordix_arrow{
+                            .port_jobs_text_left_ordix_arrow_img{
+                                padding-top: 70px;
+                                margin-left: 230px;
+                                @media (max-width:360px) {
+                                    width: 36px;
+                                    padding-top: 40px;
+                                    margin-left: 50px;
+                                } 
+                            }
+                        }
+                    }
+                    .port_jobs_text_left_ordix_subtitle{
+                        @include ph_subtitle();
+                        text-align:left;
+                        @media (max-width:360px) {
+                            @include ph_subtitle_media();
+                        }
+                    }
+                }
+            }
+        }
+        .port_jobs_text_right{
+            margin-left: 130px;
+            @media (max-width:360px) {
+                width: 267px;
+                height: 364px;
+                margin-left: 33px;
+            }
+            .port_jobs_text_right_title{
+                font-family: SUSE;
+                font-size: 26px;
+                font-weight: 300;
+                line-height: 38px;
+                text-align: left;
+                color: rgba(244, 244, 244, 1);
+                padding-bottom: 30px;
+            }
+            .port_jobs_text_right_subtitle{
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                .port_jobs_text_right_subtitle_text{
+                    @include categories();
+                    padding-right: 15px;;
+                }
+            }
+            #human_resources{
+                color:rgba(153, 169, 255, 1);
+            }
+        }
+    }
+     .port_jobs_text_left_vector_img{
+        margin-left: 140px;
+        margin-top: 80px;
+        @media (max-width:360px) {
+            margin-left: 20px;
+            margin-top: 60px;
+        } 
+    }
+}

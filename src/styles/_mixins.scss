@@ -1,0 +1,149 @@
+@mixin gradient{
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+@mixin header_textt {
+    color:#F4F4F4;
+    font-family:Montserrat;
+    font-weight:200;
+    font-size:16px;
+}
+@mixin mont{
+    font-family:Montserrat, sans-serif;
+}
+@mixin title{
+    font-family: SUSE;
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 50px;
+    color:rgba(244, 244, 244, 1);
+}
+@mixin title_media{
+    font-family: SUSE;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 29.91px;
+    letter-spacing: 0%;
+    color:rgba(244, 244, 244, 1);
+}
+@mixin subtitle{
+    color:rgba(184, 184, 184, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+}
+@mixin word{
+    font-family: SUSE;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 18px;
+    letter-spacing: 0.3em;
+    color: rgba(184, 184, 184, 0.7);
+}
+@mixin word_media{
+    font-family: SUSE;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 30%;
+    color: rgba(184, 184, 184, 0.7);
+}
+@mixin title_1{
+    font-family: SUSE;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 74px;
+    color:rgba(244, 244, 244, 1);
+}
+@mixin caps{
+    font-family: SUSE;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: left;
+}
+@mixin ph_title{
+    font-family: SUSE;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color:rgba(184, 184, 184, 1);
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+@mixin ph_subtitle{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 14px;
+    text-align: center;
+    color:rgba(184, 184, 184, 1);
+    margin-bottom:60px;
+}
+@mixin ph_subtitle_media{
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color:rgba(184, 184, 184, 1);
+    text-align: left;
+    font-weight: 100;
+    margin-bottom:40px;
+}
+@mixin title_2{
+    font-family: SUSE;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 74px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+@mixin title_2_media{
+    font-family: SUSE;
+    font-weight: 450;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+@mixin long_line_media{
+    width: 30px;
+    position: relative;
+    left:0px;
+    top: 60px; 
+}
+@mixin categories{
+    font-family: SUSE;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 26px;
+    text-align: left;
+    color:rgba(184, 184, 184, 1);
+}
+@mixin viewall{
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(153, 169, 255, 1);
+}
+@mixin maxwidth{
+    font-size: 36px;
+    line-height: 44px;
+}
+@mixin wordAdapt{
+    font-size: 12px;
+    line-height: 18px;
+}
+@mixin titleAdapt{
+    font-size: 26px;
+    line-height: 30px;
+}
+@mixin subTitleAdapt{
+    font-size: 18px;
+    line-height: 24px;
+}
